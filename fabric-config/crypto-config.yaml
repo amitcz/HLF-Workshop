@@ -1,0 +1,16 @@
+OrdererOrgs:
+  - Name: OrdererOrganization
+    Domain: example.com
+    Template:
+      Count: 3
+    Specs:
+      - Hostname: orderer
+
+PeerOrgs:
+  - Name: DAIICTOrganization
+    Domain: daiict.example.com
+    EnableNodeOUs: true
+    Template:
+      Count: 2
+    Users: 
+      Count: 1

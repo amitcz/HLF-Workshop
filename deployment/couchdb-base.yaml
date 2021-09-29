@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  couchdb.peer0.daiict.example.com:
+    image: hyperledger/fabric-couchdb
+    command: couchdb
+    ports:
+      - 5984:5984
+
+  couchdb.peer1.daiict.example.com:
+    image: hyperledger/fabric-couchdb
+    command: couchdb
+    ports:
+      - 7984:5984
